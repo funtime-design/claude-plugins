@@ -1,0 +1,21 @@
+{
+  "name": "funtimedesign",
+  "owner": { "name": "funtimedesign" },
+  "description": "Claude Code plugins shared across the funtimedesign org: an independent verifier for every agent turn, and an evidence-based gap analysis skill.",
+  "plugins": [
+    {
+      "name": "crossverify",
+      "description": "Stop-hook verifier: a different AI vendor (Codex, read-only) checks the agent's claims after every turn, with gap analysis in every verdict and an optional on-demand second reviewer via Fireworks.",
+      "source": { "source": "git-subdir", "url": "https://github.com/gunwadev/crossverify.git", "path": "plugin", "ref": "main", "sha": "dd57bddc3763c09c88a5b5c2b5e3af5f327bfe04" },
+      "category": "verification",
+      "tags": ["verifier", "codex", "hooks", "gaps"]
+    },
+    {
+      "name": "gaps",
+      "description": "Evidence-based gap analysis for a plan, spec, project, or system. Every finding is CONFIRMED with file:line, a cited RESEARCH GAP, or an OPEN QUESTION naming the check that settles it.",
+      "source": "./plugins/gaps",
+      "category": "review",
+      "tags": ["review", "gaps", "analysis"]
+    }
+  ]
+}

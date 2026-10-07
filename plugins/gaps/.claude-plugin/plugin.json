@@ -1,0 +1,8 @@
+{
+  "name": "gaps",
+  "version": "1.0.0",
+  "description": "Evidence-based gap analysis: find what a plan, spec, project, or system is missing, and keep only findings that survive a check against the real artifacts.",
+  "author": {
+    "name": "funtimedesign"
+  }
+}
