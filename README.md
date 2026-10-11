@@ -10,10 +10,6 @@ Claude Code plugins shared across the funtimedesign org.
 /plugin install gaps@funtimedesign
 ```
 
-Same repo on Azure DevOps, if you prefer org credentials:
-`/plugin marketplace add https://dev.azure.com/funtimedesign/DevOps/_git/funtimedesign-mp`
-(clones over your existing git credentials; Git Credential Manager OAuth, nothing prompts).
-
 ## Plugins
 
 | Plugin | What it is | After install |
@@ -29,4 +25,4 @@ Same repo on Azure DevOps, if you prefer org credentials:
 
 ## Backup
 
-Two remotes carry the same main: GitHub `funtime-design/claude-plugins` (what teammates add) and Azure DevOps `DevOps/funtimedesign-mp`. Push both. Forgejo mirror per the org rule.
+GitHub `funtime-design/claude-plugins` is the only remote. Forgejo mirror per the org rule.
